@@ -1,7 +1,7 @@
 /* ======= COUNTDOWN ======= */
 
 function updateTimer() {
-  let future = Date.parse("may 01, 2022 01:30:00");
+  let future = Date.parse("jul 09, 2022 01:30:00");
   let now = new Date();
   let diff = future - now;
 
