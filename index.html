@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Countdown</title>
+</head>
+<body>
+  <header>
+    <img src="./assets/top-image.svg" class="top-image">
+  </header>
+  <main>
+    <div class="grid">
+      <div class="countdown-items">
+        <h2>READY TO LAUNCH IN...</h2>
+        <div class="countdown-infos">
+          <div class="countdown-titles">
+            <p>Dias</p>
+            <p>Horas</p>
+            <p>Minutos</p>
+            <p>Segundos</p>
+          </div>
+          <div class="countdown-timer">
+            <p id="timer">08 : 12 : 44 : 28</p>
+          </div>
+        </div>
+        <p>Inscreva-se para saber mais sobre o lançamento</p>
+        <div class="button" id="inscrever">
+          <a href="#" onclick="Modal.open()">Inscreva-se</a>
+        </div>
+      </div>
+      <div class="launch-in-img">
+        <img src="./assets/rocket.svg" alt="rocket">
+      </div>
+    </div>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <div id="form">
+          <h2>Inscreva-se</h2>
+          <form action="">
+            <div class="input-group">
+              <label class="sr-only" for="name">Nome Completo</label>
+              <input class="modal-field" type="text" id="name" name="name" placeholder="Nome Completo" required>
+            </div>
+            <div class="input-group">
+              <label class="sr-only" for="email">Email</label>
+              <input class="modal-field" type="email" id="email" name="email" placeholder="E-mail" required>
+              <small class="help">Enviaremos todas informações via e-mail</small>
+            </div>
+            <div class="input-group">
+              <label class="sr-only" for="cellphone">Celular</label>
+              <input class="modal-field" type="text" id="cellphone" name="cellphone" placeholder="Celular" required>
+            </div>
+            <div class="input-group actions">
+              <a href="#" class="button-cancel" onclick="Modal.close()">Cancelar</a>
+              <button >Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <img src="./assets/bottom-image.svg" class="bottom-image">
+  </footer>
+  <script src="./main.js"></script>
+</body>
+</html>
